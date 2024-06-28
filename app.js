@@ -23,7 +23,9 @@ app.post('/submit-form', (req, res) => {
   });
 
 
-app.listen(3030, () => 
-    console.log("Servidor corriendo"))
-    
+let port = 3000 || process.env.PORT;
+
+
+app.listen(port, () => 
+    console.log("Servidor corriendo" + port))
     
